@@ -45,7 +45,7 @@ You can see the hardware that is used. The connections can be obtained from the 
 ![alt text][running]
 ![alt text][mapping]
 ![alt text][solidworks]
-#### Mapping 
+## Mapping 
 1. Source your environment
 ```sh
 $ cd catkin_ws
@@ -66,7 +66,7 @@ $ roslaunch mobile_robot_teleop mobile_robot_teleop_key.launch
 ![alt text][rviz_mapping]
 
 Stop the mapping and place the robot in the initial position where it started mapping
-#### Navigation 
+## Navigation 
 
 1. Launch the hardware interface. This communicates the Arduino and the Computer with ROS
 ```sh
