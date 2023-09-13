@@ -1,6 +1,8 @@
 # ROS_Mobile_Robot_Implementation
  Implementation from scratch of a mobile robot
 
+ https://www.youtube.com/shorts/2U2N2IlqIuU
+
 ## Requierements
 
 1. Ubuntu 18 with ROS Melodic installed. This computer can be a laptop, like in this case, but it also can run in an embedded system like a Jetson Nano or a Raspberry. 
