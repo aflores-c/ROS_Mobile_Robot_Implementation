@@ -1,0 +1,17 @@
+<launch>
+	
+	<!--<node name="serial_node" pkg="rosserial_python" type="serial_node.py">
+		<param name="port" value="/dev/ttyACM0"/>
+	</node>-->
+		ssssssss
+	<node name="hardware_interface_node" pkg="hardware_interface" type="hardware_interface_node">
+		<param name="publish_tf" value="true" />
+    		<param name="publish_rate" value="10.0" />
+    		<param name="linear_scale_positive" value="1.8" />
+    		<param name="linear_scale_negative" value="1.8" />
+    		<param name="angular_scale_positive" value="1.0" />
+    		<param name="angular_scale_negative" value="1.0" />
+		<param name="angular_scale_accel" value="0.0" />
+	</node>	
+	
+</launch>

@@ -1,0 +1,24 @@
+<launch>
+
+    <arg name="open_rviz" default="false"/>
+
+				<!--  ************** Odometry ***************  -->
+	<param name="robot_description" textfile="$(find mobile_robot_description)/urdf/mobile_robot_description.urdf"/>
+
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+	
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+	
+    <include file="$(find hardware_interface)/launch/mrobot_control.launch"> 
+    </include>
+
+    <include file="$(find rplidar_ros)/launch/rplidar.launch"> 
+    </include>
+
+      <!-- rviz -->
+    <group if="$(arg open_rviz)"> 
+        <node pkg="rviz" type="rviz" name="rviz" required="true"
+            args="-d $(find hardware_interface)/config/bringup.rviz"/>
+    </group>
+	
+</launch>

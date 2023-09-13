@@ -1,0 +1,8 @@
+prefix=/home/andy/mrobot_ws/devel
+
+Name: hardware_interface
+Description: Description of hardware_interface
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+hardware_interface:mobile_robot_description:mobile_robot_navigation:mobile_robot_slam:mobile_robot_teleop:rplidar_ros
+-DCATKIN_DEVEL_PREFIX=/home/andy/mrobot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/andy/mrobot_ws/install -G Unix Makefiles

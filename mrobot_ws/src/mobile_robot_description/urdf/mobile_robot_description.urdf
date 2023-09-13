@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mobile_robot_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.026648 5.5511E-17 0.22833"
+        rpy="0 0 0" />
+      <mass
+        value="8.784" />
+      <inertia
+        ixx="0.52301"
+        ixy="-2.1112E-17"
+        ixz="0.075657"
+        iyy="0.58711"
+        iyz="-1.0443E-16"
+        izz="0.26201" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_right_front">
+    <inertial>
+      <origin
+        xyz="3.636E-14 6.7391E-14 1.2046E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.62134" />
+      <inertia
+        ixx="0.00071646"
+        ixy="2.4264E-23"
+        ixz="5.9787E-36"
+        iyy="0.0011197"
+        iyz="1.4513E-18"
+        izz="0.00071646" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_right_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_right_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_front"
+    type="continuous">
+    <origin
+      xyz="0.20923 -0.19953 -0.043282"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_right_front" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="2"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_right_back">
+    <inertial>
+      <origin
+        xyz="1.13728471085039E-13 9.64783808399261E-14 4.82947015711943E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.621344195026989" />
+      <inertia
+        ixx="0.000716461635549037"
+        ixy="2.42639646349009E-23"
+        ixz="5.97870409487556E-36"
+        iyy="0.00111966223943863"
+        iyz="1.45133576264986E-18"
+        izz="0.000716461635549037" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_right_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_right_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_back"
+    type="continuous">
+    <origin
+      xyz="-0.20869 -0.19855 -0.04329"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_right_back" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="2"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_left_front">
+    <inertial>
+      <origin
+        xyz="1.66533453693773E-16 -7.64943663966733E-14 3.57880391987919E-13"
+        rpy="0 0 0" />
+      <mass
+        value="0.62134419502699" />
+      <inertia
+        ixx="0.000716461635549038"
+        ixy="-1.23988859284282E-20"
+        ixz="-7.74888424345354E-36"
+        iyy="0.00111966223943864"
+        iyz="1.45133576264986E-18"
+        izz="0.000716461635549038" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_left_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_left_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_front"
+    type="continuous">
+    <origin
+      xyz="0.20904 0.19918 -0.043498"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_left_front" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="2"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_left_back">
+    <inertial>
+      <origin
+        xyz="-2.08166817117217E-16 -7.52731210695856E-14 3.34343663865866E-13"
+        rpy="0 0 0" />
+      <mass
+        value="0.62134419502699" />
+      <inertia
+        ixx="0.000716461635549038"
+        ixy="1.23988859284282E-20"
+        ixz="5.97870409487527E-36"
+        iyy="0.00111966223943864"
+        iyz="1.45133576264986E-18"
+        izz="0.000716461635549038" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_left_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_left_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_back"
+    type="continuous">
+    <origin
+      xyz="-0.20905 0.19831 -0.043348"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_left_back" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="2"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_lidar">
+    <inertial>
+      <origin
+        xyz="0.00676653011666362 -9.19261111640979E-05 -0.0224318722671596"
+        rpy="0 0 0" />
+      <mass
+        value="1.33076913637071" />
+      <inertia
+        ixx="0.000614917940454091"
+        ixy="-8.01984318975587E-07"
+        ixz="0.00015824302591117"
+        iyy="0.000960697335617221"
+        iyz="-3.09162986587636E-06"
+        izz="0.00109815200027136" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_lidar"
+    type="fixed">
+    <origin
+      xyz="0.14588 0.0021614 0.0577"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_lidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_camera">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_camera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_camera"
+    type="fixed">
+    <origin
+      xyz="0.17869 0.0016735 0.30465"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
